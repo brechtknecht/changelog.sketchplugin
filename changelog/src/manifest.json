@@ -6,7 +6,8 @@
     {
       "name": "Commit Changes",
       "identifier": "{{ slug }}.my-command-identifier",
-      "script": "./changelog.js"
+      "script": "./changelog.js",
+      "shortcut" : "command shift u"
     }
   ],
   "menu": {

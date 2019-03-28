@@ -1,8 +1,7 @@
 var sketch = require('sketch');
 
 module.exports = {
-
-    // Returns the Artboard Instance with a specific name
+    // Returns the Artboard Instance with a specific name as a promise
     getArtboardByName: function (name) {
         return new Promise((resolve, reject) => {
             const document = sketch.fromNative(context.document)
@@ -24,7 +23,7 @@ module.exports = {
         });
     },
 
-    //find a layer from a specific artboard
+    //find a layer from a specific artboard as a promise
     getLayerFromArtboardByName: function (layerName, artboardName) {
         return new Promise((resolve, reject) => {
             const document = sketch.fromNative(context.document);

@@ -4,13 +4,13 @@
   "icon": "icon.png",
   "commands": [
     {
-      "name": "my-command",
+      "name": "Commit Changes",
       "identifier": "{{ slug }}.my-command-identifier",
-      "script": "./my-command.js"
+      "script": "./changelog.js"
     }
   ],
   "menu": {
-    "title": "changelog",
+    "title": "Changelog v53",
     "items": [
       "{{ slug }}.my-command-identifier"
     ]

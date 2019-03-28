@@ -1,4 +1,4 @@
-@import 'utils.js'
+@import 'utils.js';
 var commit;
 var username;
 var remember;

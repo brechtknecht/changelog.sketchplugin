@@ -3,7 +3,8 @@ import UI from 'sketch/ui'
 import utils from './utils.js'
 
 let document = sketch.fromNative(context.document);
-var Artboard = require('sketch/dom').Artboard
+let Artboard = require('sketch/dom').Artboard
+let Text = require('sketch/dom').Text
 
 // documentation: https://developer.sketchapp.com/reference/api/
 
@@ -19,10 +20,19 @@ function createChangelog() {
   frame.height = 800;
 
   var artboard = new Artboard({
-    name: 'Changelog',
+    name: 'Changelog-xxx',
     frame: frame
   })
+
+  // Pushes the Artboard to the layer list
   document.selectedPage.layers.push(artboard);
+
+  var text = new Text({
+    text: 'my text',
+    alignment: Text.Alignment.center,
+  })
+
+  artboard.layers.push(text);
 }
 
 export default function() {
